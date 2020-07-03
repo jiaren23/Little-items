@@ -6,13 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        html,body{
+            width: 100%;
+        }
+        .todo{
+            width: 500px;
+            margin:auto;;
+        }
+        a{
+            padding: 0 3px;
+            margin-left: 5px;
+            border: solid 1px;
+            border-radius: 5px;
+        }
+        li{
+            margin: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <input type="text" id="text">
-    <input type="button" value="click" id="btn">
+    <div class="todo">
+        <h1>Todo List</h1> 
+        <input type="text" id="text">
+        <input type="button" value="新增事項" id="btn">
+        <input type="button" value="刪除所有事項" id="deletALL">
+        <ul id="list"></ul>
+    </div>
 
-    <ul class="list">    </ul>
+    <script src="main.js"></script>
 </body>
-<script src="./main.js"></script>
+
 </html>
